@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FX TRADERS LTD</title>
+<style>
+:root {
+  --gold: #d6ad55;
+  --navy: #081323;
+  --panel: #122238;
+  --text: #f5f5f5;
+  --muted: #aab6c5;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--navy);
+  color: var(--text);
+}
+header {
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #29394d;
+}
+.logo { color: var(--gold); font-weight: bold; font-size: 21px; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 14px;
+}
+.notice {
+  text-align: center;
+  background: #302817;
+  color: #f2d28c;
+  padding: 10px;
+  font-size: 12px;
+}
+.hero {
+  padding: 75px 7%;
+  text-align: center;
+  background: linear-gradient(135deg,#101f34,#081323);
+}
+.hero h1 { font-size: 38px; margin-bottom: 15px; }
+.hero h1 span { color: var(--gold); }
+.hero p { color: var(--muted); line-height: 1.7; }
+.tag {
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+.button {
+  display: inline-block;
+  background: var(--gold);
+  color: #101820;
+  padding: 13px 23px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 18px;
+}
+section { padding: 45px 6%; }
+.section-title { text-align: center; margin-bottom: 28px; }
+.section-title h2 { color: var(--gold); }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 18px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid #29394d;
+  border-radius: 10px;
+  padding: 23px;
+  text-align: center;
+}
+.card h3 { color: var(--gold); }
+.card p { color: var(--muted); line-height: 1.6; }
+.chart {
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+}
+footer {
+  padding: 25px;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid #29394d;
+  font-size: 13px;
+}
+.warning {
+  background: #302817;
+  border: 1px solid #80652d;
+  border-radius: 8px;
+  padding: 16px;
+  color: #f2d28c;
+  line-height: 1.6;
+  font-size: 13px;
+}
+@media(max-width:600px) {
+  header { flex-direction: column; gap: 15px; }
+  nav a { margin: 0 7px; }
+  .hero h1 { font-size: 29px; }
+}
+</style>
+</head>
+<body>
+
+<div class="notice">
+  EDUCATIONAL DEMONSTRATION — NO REAL INVESTMENTS OR PAYMENTS
+</div>
+
+<header>
+  <div class="logo">FX TRADERS LTD</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#packages">Packages</a>
+    <a href="#gold">Gold</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div class="tag">LEARN • ANALYSE • UNDERSTAND</div>
+  <h1>Explore the World of <span>Trading</span></h1>
+  <p>
+    Discover financial markets, explore gold-price movements
+    and learn about trading through an educational demonstration.
+  </p>
+  <a href="#packages" class="button">Explore Demo Packages</a>
+</div>
+
+<section id="packages">
+  <div class="section-title">
+    <h2>Demo Packages</h2>
+    <p>Example educational access levels — not investment products.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>BRONZE</h3>
+      <h2>$8</h2>
+      <p>Basic trading education</p>
+      <p>Market-learning materials</p>
+      <p>Demo account experience</p>
+    </div>
+    <div class="card">
+      <h3>SILVER</h3>
+      <h2>$15</h2>
+      <p>Intermediate learning</p>
+      <p>Technical analysis lessons</p>
+      <p>Demo account experience</p>
+    </div>
+    <div class="card">
+      <h3>GOLD</h3>
+      <h2>$25</h2>
+      <p>Advanced learning topics</p>
+      <p>Market analysis lessons</p>
+      <p>Demo account experience</p>
+    </div>
+  </div>
+</section>
+
+<section id="gold">
+  <div class="section-title">
+    <h2>Gold Market</h2>
+    <p>Explore gold market information.</p>
+  </div>
+  <div class="chart">
+    <h3>XAU/USD — Gold vs US Dollar</h3>
+    <p>Live market chart will be connected in a later step.</p>
+    <p style="color:#d6ad55">Educational demonstration only</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-title">
+    <h2>About FX TRADERS LTD</h2>
+  </div>
+  <div class="warning">
+    This website is currently an educational prototype. It does not accept
+    deposits, hold customer funds, execute trades, or promise investment
+    returns. Trading involves risk, and profits are never guaranteed.
+    Any future real-money service would require appropriate legal and
+    regulatory review before launch.
+  </div>
+</section>
+
+<footer>
+  © 2026 FX TRADERS LTD. Educational demonstration.
+</footer>
+
+</body>
+  </html>
+  
